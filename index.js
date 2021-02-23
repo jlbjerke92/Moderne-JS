@@ -22,9 +22,9 @@ try {
 
  (function UseLetOrConst() {
     // Use let (or const) instead of var to make the function succeed.
-     var x = 1;
-   if (true) {
-    var x = 1;
+     let x = 1;
+	 if (true) {
+	 let x = 2;
     }
 
    // Don't make changes below this line
@@ -39,7 +39,7 @@ try {
  
 	(function UseTemplateStrings1() {
 		const who = 'World';
-		const addOne = x => x + 2;
+		const addOne = x => x + 1;
 		
 		
 		// Rewrite the line below to use template literals.
@@ -190,8 +190,8 @@ try {
 		// Use array destructuring to change the 3 statements below into 1 statement.
 		// You should not need a temporary variable anymore.
 	     
-		 [a, ,b,]=
-		 [b, ,a,];
+		 [a, b]=
+		 [b, a];
 
 		// Don't make changes below this line	
 		
